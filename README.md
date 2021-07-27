@@ -4,6 +4,11 @@
 go get github.com/PerfilovStanislav/go-raw-postgresql-builder@v1.0.0
 ```
 
+## EXAMPLES
+- [Simple](#simple-example)
+- [Bulk insert](#bulk-insert-example)
+- [Sql in sql](#sql-in-sql-example)
+
 ## Simple Example
 
 ```go
@@ -154,3 +159,8 @@ func main() {
 }
 ```
 
+## Creators
+
+**Perfilov Stanislav**
+
+- <https://t.me/PerfilovStanislav>

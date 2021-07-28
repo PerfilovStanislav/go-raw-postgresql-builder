@@ -138,14 +138,12 @@ func main() {
 
 	fmt.Println(sql.String()) /*
 		WITH _get_post_admins(admin_id) AS (
-			$AdminSql
 			SELECT DISTINCT admin_id
 			FROM posts
 			WHERE rating > 9
 			ORDER BY rating DESC
 			LIMiT 10
 		), _insert_to_stat AS (
-			$StatSql
 			INSERT INTO dayly_stats(admin_id, day)
 			SELECT admin_id, date_trunc('day', now())
 			FROM _get_post_admins
